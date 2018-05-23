@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mebel.Org</title>
+        <!--
+        <script>
+            obj.dd.on('click', function(event){
+                $(this).toggleClass('active');
+                return false;
+            });
+
+            //...
+
+            $(function() {
+
+                var dd = new DropDown( $('#dd') );
+
+                $(document).click(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-1').removeClass('active');
+                });
+
+            });
+            
+            
+            function DropDown(el) {
+                this.dd = el;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        event.stopPropagation();
+                    });
+                }
+            }
+        </script>
+        -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <h1 class="header-logo__title"><a class="header-logo__link" href="#" class="header-logo__link">Mebel.Org</a></h1>
+            </div>
+            <div class="header-cat">
+                <div id="dd" class="wrapper-dropdown header-cat-text">Каталог Товаров
+                    <!--<ul class="dropdown">
+                        <li>
+                            <a href="#">Категория<i class="icon-twitter icon-large"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Категория<i class="icon-twitter icon-large"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">Категория<i class="icon-twitter icon-large"></i></a>
+                        </li>
+                    </ul>-->
+                </div>
+            </div>
+            <div class="header-loc">
+                <a class="header-loc__link" href=""><i class="header-loc__icon"></i>Москва</a>
+            </div>
+            <div class="header-search">
+                <form action="#">
+                    <input class="header-search__input" type="search" placeholder="Я ищу...">
+                    <input class="header-search__submit" type="submit" name="" value="">
+                </form>
+            </div>
+            <div class="header-user">
+                <a href="#"><img class="header-user__icon" src="img/icon-user.png" alt="Ппользователь"></a>
+            </div>
+            <div class="header-compare">
+                <a href="#"><img class="header-compare__icon" src="img/icon-compare.png" alt="Сравнение"></a>
+            </div>
+            <div class="header-liked">
+                <a href="#"><img class="header-liked__icon" src="img/icon-heart.svg" alt="Понравилось"></a>
+            </div>
+            <div class="header-shopping">
+                <a href="#"><img class="header-shopping__icon" src="img/icon-shopping-cart.png" alt="Корзина"></a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

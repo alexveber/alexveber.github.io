@@ -1,0 +1,195 @@
+//*,
+//*:after,
+//*:before
+//    box-sizing: border-box
+//
+//.wrapper-dropdown
+//    position: relative
+//    width: 200px
+//    margin: 0 auto
+//    padding: 10px 15px
+//    background: #fff
+//    border-left: 5px solid grey
+//    cursor: pointer
+//    outline: none
+//    &:after
+//        content: ''
+//        width: 0
+//        height: 0
+//        position: absolute
+//        right: 16px
+//        top: 50%
+//        margin-top: -3px
+//        border-width: 6px 6px 0 6px
+//        border-style: solid
+//        border-color: grey transparent
+//    .active
+//        &:after
+//            border-width: 0 6px 6px 6px
+//        .dropdown
+//            opacity: 1
+//            pointer-event: auto
+//.dropdown
+//    position: absolute
+//    top: 100%
+//    left: -5px
+//    right: 0
+//    background: white
+//    list-style: none
+//    opacity: 0
+//    pointer-events: none
+//    
+//    li
+//        a
+//            display: block
+//            text-decoration: none
+//            color: #333
+//            border-left: 5px solid
+//            padding: 10px
+//            transition: all 0.3 aesy-out
+//            i
+//                margin-right: 5px
+//                color: inherit
+//                vertical-align: middle
+//        &:nth-child(1)
+//            a
+//                border-left-color: #00ACED
+//        &:nth-child(2)
+//            a
+//                border-left-color: #4183C4
+//        &:nth-child(3)
+//            a
+//                border-left-color: #3B5998
+//        &:hover
+//            a
+//                color: grey
+//    
+//    
+
+html
+    font-size: 10px
+body
+    margin: 0
+    font-family: 'PT Sans', sans-serif
+a
+    text-decoration: none
+    color: #000
+.container
+    display: flex
+    align-items: center
+    justify-content: center
+.header
+    &-logo
+        &__title
+            position: relative
+            margin: 0
+            padding: 15px 12px
+            z-index: 1
+            &:before
+                content: ''
+                position: absolute
+                top: 2px
+                left: 0
+                height: 5rem
+                width: 5rem
+                border: 2px solid #ffbc1f
+                z-index: -1
+        &__link
+            background: #fff
+            font-size: 1.5rem
+            font-weight: 400
+            color: #000
+    &-cat
+        margin-left: 40px
+        &-text
+            background-color: #ffbc1f
+            border-radius: 3px
+            color: #fff
+            font-size: 1.8rem
+            padding: 13px 62px 13px 32px
+            position: relative
+            cursor: pointer
+            &:after
+                content: ""
+                width: 0
+                height: 0
+                position: absolute
+                right: 38px
+                top: 50%
+                margin-top: -1px
+                border-width: 6px 6px 0 6px
+                border-style: solid
+                border-color: white transparent
+    &-loc
+        margin-left: 50px
+        &__link
+            font-size: 1.9rem
+            font-weight: 400
+        &__icon
+            position: relative
+            &:before
+                content: ""
+                background:  url(../img/icon-loc.png) center no-repeat /20px
+                display: block
+                position: absolute
+                height: 20px
+                width: 20px
+                color: red
+                left: -25px
+                top: 2px
+    &-search
+        margin-left: 90px
+        position: relative
+        &__input
+            outline: none
+            border: 1px solid #ccc
+            border-radius: 4px
+            width: 620px
+            padding: 13px 10px
+            font-size: 1.6rem
+            &:focus
+                outline: 1px solid #bbb
+            &::placeholder
+                color: #ddd
+            &::-ms-clear,
+            &::-ms-reval
+                display: none
+                height: 0
+                width: 0
+            &::-webkit-search-decoration,
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-results-button,
+            &::-webkit-search-results-decoration
+                display: none
+        &__submit
+            border: none
+            position: absolute
+            top: 0
+            right: 4px
+            width: 37px
+            height: 100%
+            cursor: pointer
+            background: url("../img/icon-search.png") 50% no-repeat
+            background-size: 24px
+            opacity: 0.5
+    &-user,
+    &-compare,
+    &-liked
+        margin-left: 40px
+        &__icon
+            width: 35px
+            height: 35px
+    &-shopping
+        background-color: #ffbc1f
+        margin: 0
+        margin-left: 30px
+        padding: 14px 26px
+        &__icon
+            width: 35px
+            height: 35px
+            
+        
+    
+        
+            
+            
