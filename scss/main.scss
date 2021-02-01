@@ -1,0 +1,617 @@
+@import 'null';
+
+.circle-bg{
+   &__four{
+      &::before{
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 542px;
+         width: 330px;
+         height: 901px;
+         background: url(../img/left-double-circle-3.png) right center no-repeat;
+         background-size: 1034px 901px;
+         z-index: -1;
+      }
+      &::after{
+         content: '';
+         position: absolute;
+         top: -80px;
+         right: 0;
+         width: 638px;
+         height: 941px;
+         position: absolute;
+         background: url(../img/right-double-circle-3.png) left bottom no-repeat;
+         background-size: 1142px 1191px;
+         z-index: -1;
+      }
+   }
+}
+.bg-dots{
+   position: relative;
+   &::before{
+      content: '';
+      position: absolute;
+      top: 58px;
+      left: 5px;
+      display: block;
+      width: 174px;
+      height: 349px;
+      background: url(../img/dots-arrow-left-side-2.png) right center no-repeat;
+      background-size: 174px 349px;
+      z-index: -1;
+   }
+}
+.gray-title{
+   position: relative;
+   padding: 0;
+   margin: 0;
+   color: #747474;
+   font: 400 24px/1.5em 'Roboto', sans-serif;
+   &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: inline-block;
+      width: 135px;
+      height: 4px;
+      background-color: #e3183e;
+   }
+}
+.red-line{
+   display: inline-block;
+   width: 135px;
+   height: 4px;
+   background-color: #e3183e;
+}
+
+
+.page-company{
+   .container{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1920px;
+      box-sizing: border-box;
+   }
+   .title{
+      position: relative;
+      margin: 0 110px;
+      padding: 49px 0px 34px;
+      color: #252b33;
+      font: 900 70px/1.5em 'Roboto', sans-serif;
+      &::before{
+         content: '';
+         position: absolute;
+         left: -70px;
+         bottom: 0;
+         display: inline-block;
+         width: 135px;
+         height: 4px;
+         background-color: #e3183e;
+      }
+   }
+   .subtitle{
+      margin: 30px 110px 0;
+      color: #252b33;
+      font: 500 53px/1.5em 'Roboto', sans-serif;
+   }
+   .text-center{
+      width: 100%;
+      max-width: 739px;
+      margin: 48px auto 0;
+      p{
+         margin: 27px 0;
+         color: #000;
+         font: 400 18px/1.5em 'Roboto', sans-serif;
+      }
+      strong{
+         font-weight: 700;
+      }
+   }
+   .two-photo{
+      display: flex;
+      justify-content: space-between;
+      margin: 105px 50px 0;
+      &-image{
+         flex: 0 0 49%;
+         max-width: 861px;
+         height: 536px;
+         height: 27.9vw;
+         overflow: hidden;
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+      }
+   }
+
+   .partners{
+      margin: 130px 0 0;
+      &-two{
+         margin: 120px 0 0;
+      }
+      &-three{
+      }
+      .gray-title{
+         margin: 0 0 0 107px;
+         padding: 0 0 24px;
+         text-transform: uppercase;
+         &::before{
+            left: -68px;
+         }
+      }
+      &-list{
+         display: grid;
+         grid-template-columns: repeat(6, 1fr);
+         grid-gap: 30px;
+         flex-wrap: wrap;
+         margin: 85px 90px 0;
+      }
+      &__item{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         margin-bottom: 100px;
+         img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            object-position: center;
+         }
+      }
+   }
+
+   .big-photo{
+      margin: 110px 0 0;
+      .container{
+         padding: 0 30px;
+      }
+      &-image{
+         width: 100%;
+         height: 41.4vw;
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+      }
+   }
+
+   .posts{
+      margin: 20px 0 70px;
+      &.bg-dots{
+         position: relative;
+         &::before{
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 5px;
+            display: block;
+            width: 255px;
+            height: 511px;
+            background: url(../img/dots-arrow-left-side-3.png) right center no-repeat;
+            background-size: 255px 511px;
+            z-index: -1;
+         }
+      }
+      .gray-title{
+         margin: 0 0 0 107px;
+         padding: 0 0 24px;
+         text-transform: uppercase;
+         &::before{
+            left: -68px;
+         }
+      }
+      &__title{
+         margin: 30px 107px 0;
+         color: #252b33;
+         font: 700 53px/1.5em 'Roboto', sans-serif;
+      }
+      &__descr{
+         margin: 1px 107px 0;
+         color: #3d444a;
+         font: 400 18px/1.5em 'Roboto', sans-serif;
+      }
+      &-list{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 30px;
+         flex-wrap: wrap;
+         margin: 25px 35px 0;
+      }
+      &__item{}
+      .post{
+         &__item{
+            .red-line{
+               margin-top: 31px;
+            }
+         }
+         &-image{
+            width: 100%;
+            height: 29.7vw;
+            max-height: 570px;
+            overflow: hidden;
+            img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               object-position: center;
+            }
+         }
+         &__title{
+            margin: 17px 68px 0;
+            color: #252b33;
+            font: 900 38px/1.2em 'Roboto', sans-serif;
+         }
+         &__text{
+            margin: 0px 68px 0;
+            color: #252b33;
+            font: 400 18px/1.5em 'Roboto', sans-serif;
+         }
+         &__blue-link{
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: 10px 68px 0;
+            color: #014180;
+            font: 500 18px/1.5em 'Roboto', sans-serif;
+            white-space: nowrap;
+            text-decoration: none;
+            text-transform: uppercase;
+            .icon{
+               flex: 0 0 45px;
+               width: 45px;
+               height: 45px;
+               margin-left: 34px;
+            }
+         }
+      }
+   }
+   
+}
+@media screen and (max-width: 1700.98px){
+   .circle-bg__four{
+      &::before{
+         width: 17.3%;
+      }
+      &::after{
+         width: 33.5%;
+      }
+   }
+}
+@media screen and (max-width: 1400.98px){
+   .gray-title{
+      font: 400 18px/1.5em 'Roboto', sans-serif;
+   }
+   .bg-dots::before{
+      display: none;
+   }
+   .circle-bg__four{
+      &::before{
+         
+      }
+      &::after{
+         width: 354px;
+         height: 418px;
+         background: url(../img/right-double-circle-tablet-3.png) left bottom no-repeat;
+         background-size: 481px 501px;
+      }
+   }
+   .page-company{
+      .title{
+         margin: 0 35px;
+         padding: 82px 0px 26px;
+         font-size: 40px;
+         &::before{
+            left: -14px;
+         }
+      }
+      .subtitle{
+         margin: 44px 64px 0;
+         font-size: 35px;
+      }
+      .text-center{
+         max-width: 794px;
+         margin: 44px auto 0;
+         padding: 0 20px;
+         p{
+            margin: 23px 0;
+            font: 400 18px/1.3em 'Roboto', sans-serif;
+         }
+      }
+      .two-photo{
+         margin: 75px 50px 0;
+         &-image{
+            flex: 0 0 46.4%;
+            height: 25.5vw;
+         }
+      }
+      .partners{
+         margin: 70px 0 0;
+         .gray-title{
+            margin: 0 0 0 65px;
+            padding: 0px 0 31px;
+            &::before{
+               left: -38px;
+            }
+         }
+         &-list{
+            margin: 50px 40px 0;
+         }
+         &__item{
+            margin-bottom: 50px;
+         }
+      }
+      .big-photo{
+         margin: 63px 0 0;
+         &-image{
+            height: 40.1vw;
+         }
+      }
+      .posts{
+         margin: 10px 0 106px;
+         .gray-title{
+            margin: 0 0 0 90px;
+            padding: 0px 0 25px;
+            font: 400 24px/1.5em 'Roboto', sans-serif;
+            &::before{
+               left: -67px;
+            }
+         }
+         &__title{
+            margin: 21px 65px 0;
+         }      
+         &__descr{
+            margin: 0px 61px 0;
+         }
+         &-list{
+            grid-gap: 15px;
+            margin: 15px 26px 0;
+         }
+         .post{
+            &__item{
+               .red-line{
+                  margin-top: 26px;
+               }
+            }
+            &-image{
+               height: 28.5vw;
+            }
+            &__title{
+               margin: 22px 40px 0;
+            }
+            &__text{
+               margin: 0px 40px 0;
+            }
+            &__blue-link{
+               margin: 43px 40px 0;
+               .icon{
+                  flex: 0 0 30px;
+                  width: 30px;
+                  height: 30px;
+                  margin-left: 11px;
+               }
+            }
+         }
+      }
+
+
+
+   }
+}
+@media screen and (max-width: 768.98px){
+   .circle-bg__four{
+      &::before{}
+      &::after{
+         width: 200px;
+         height: 404px;
+         background: url(../img/right-double-circle-phone-3.png) left bottom no-repeat;
+         background-size: 426px 444px;
+      }
+   }
+   .page-company{
+      .title{
+         margin: 0 39px;
+         padding: 6px 0px 35px;
+         font-size: 30px;
+         &::before{
+            left: -26px;
+            width: 105px;
+         }
+      }
+      .subtitle{
+         margin: 86px 39px 0;
+         font-size: 29px;
+      }
+      .text-center{
+         margin: 29px 0 0;
+         padding: 0 36px;
+         box-sizing: border-box;
+         p{
+            font: 400 16px/1.35em 'Roboto', sans-serif;
+         }
+      }
+      .two-photo{
+         flex-wrap: wrap;
+         margin: 37px 20px 0;
+         &-image{
+            flex: 0 0 100%;
+            height: 56vw;
+            margin-bottom: 10px;
+         }
+      }
+      .partners{
+         margin: 43px 0 0;
+         .gray-title{
+            margin: 0px 0 0 40px;
+            padding: 0px 0 29px;
+            &::before{
+               left: -30px;
+            }
+         }
+         &-list{
+            grid-template-columns: repeat(3, 1fr);
+         }
+      }
+
+      .big-photo{
+         margin: 35px 0 0;
+         .container{
+            padding: 0 12px;
+         }
+      }
+      .posts{
+         margin: 30px 0 55px;
+         &.bg-dots::before{
+            top: 30px;
+            left: 5px;
+            width: 184px;
+            height: 368px;
+            background: url(../img/dots-arrow-left-side-phone-3.png) right center no-repeat;
+            background-size: 184px 368px;
+         }
+         .gray-title{
+            margin: 0 0 0 40px;
+            padding: 0 0 28px;
+            font: 400 18px/1.5em 'Roboto', sans-serif;
+            &::before{
+               left: -29px;
+            }
+         }
+         &__title{
+            margin: 28px 40px 0;
+            font: 700 30px/1.1em 'Roboto', sans-serif;
+         }
+         &__descr{
+            margin: 8px 40px 0;
+            line-height: 1.1em;
+         }
+         &-list{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 31px;
+            margin: 11px 12px 0;
+         }
+         .post{
+            &__item{
+               .red-line{
+                  margin-top: 30px;
+               }
+            }
+            &-image{
+               height: 60.7vw;
+            }
+            &__title{
+               margin: 6px 0 0 29px;
+            }
+            &__text{
+               margin: 0 0 0 29px;
+            }
+            &__blue-link{
+               margin: 27px 28px 0px;
+               font: 500 16px/1.5em 'Roboto', sans-serif;
+               .icon{
+                  flex: 0 0 23px;
+                  width: 23px;
+                  height: 23px;
+                  background-size: 6px 10px;
+               }
+            }
+         }
+
+      }
+
+   }
+}
+
+.page-company{
+   .text{
+      margin: 0 96px;
+      p{
+         margin: 0;
+         color: #000;
+         font: 400 23px/1.5em 'Roboto', sans-serif;
+      }
+   }
+   .general{
+      // margin: 70px 0 0;
+      margin: 70px 23px 0 40px;
+      .container{
+         position: relative;
+         background: #dedede;
+      }
+      &-text{
+         width: 43%;
+         padding: 75px 0 50px 65px;
+         p{
+            margin: 4px 83px 27px 3px;
+            color: #252b33;
+            font: 400 18px/1.5 'Roboto', sans-serif;
+         }
+      }
+      &__vacancy{
+         color: #747474;
+         font: 400 23px/1.5em 'Roboto', sans-serif;
+      }
+      &__name{
+         margin: 22px 0 0 3px;
+         color: #000;
+         font: 700 38px/1.5em 'Roboto', sans-serif;
+      }
+      &-image{
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         &__wrap{
+            width: 733px;
+            height: 733px;
+            border-radius: 50%;
+            overflow: hidden;
+         }
+         img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+      }      
+   }
+   .staff{
+      .container{}
+      .red-line{}
+      &__title{
+         color: #252b33;
+         font: 700 34px/1.5 'Roboto', sans-serif;
+      }
+      &__descr{
+         color: #000;
+         font: 400 15px/1.5em 'Roboto', sans-serif;
+      }
+      &-list{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 166px;
+         flex-wrap: wrap;
+      }
+      &__item{
+         margin-bottom: 74px;
+         .red-line{}
+      }
+      &-image{
+         img{}
+      }
+      &__name{
+         color: #252b33;
+         font: 400 30px/1.5em 'Roboto', sans-serif;
+      }
+      &__text{
+         color: #000;
+         font: 400 15px/1.5em 'Roboto', sans-serif;
+      }
+   }
+
+}
