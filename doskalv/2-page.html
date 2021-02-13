@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>doska.lv</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="libs/choises-select/choices.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+   <header class="header">
+         <div class="container header-flex">
+            <div class="header-left">
+               <div class="logo">
+                  <a href="#" class="logo__link">
+                     <img src="img/logo.png" alt="">
+                     <span>doska.lv</span>
+                  </a>
+               </div>
+               <div class="select-lang">
+                  <a href="#" class="select-lang__link current">ru</a>
+                  <a href="#" class="select-lang__link">en</a>
+                  <a href="#" class="select-lang__link">lv</a>
+                  <a href="#" class="select-lang__link">lt</a>
+               </div>
+            </div>
+            <div class="header-center">
+               <form action="#" class="search-form">
+                  <div class="search">
+                     <input type="text" name="q" placeholder="ПОИСК:" class="search__input">
+                     <input type="submit" class="search__btn" value="">
+                  </div>
+               </form>
+            </div>
+            <div class="header-right">
+               <div class="header-btns">
+                  <a href="#" class="btn btn-rounded-blue">
+                     <i class="icon icon-circle-ok"></i>
+                     <span>Подать объявление</span>
+                  </a>
+                  <a href="#" class="btn btn-rounded-white">
+                     <span>Логин</span>
+                     <i class="icon icon-enter"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+   </header>
+
+   
+
+
+<div class="breadcrumbs">
+   <div class="container">
+      <ul class="breadcrumbs-list">
+         <li class="breadcrumbs__item">
+            <a href="#">
+               <i class="icon icon-home">
+                  <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                     <path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"/>
+                  </svg>
+               </i>
+            </a>
+         </li>
+         <li class="breadcrumbs__item"><a href="#">Ищут работу (Поиск работы)</a></li>
+         <li class="breadcrumbs__item"><span>Web дизайнер</span></li>
+      </ul>
+   </div>
+</div>
+
+<div class="filter">
+   <form action="#" class="form">
+      <div class="container filter-flex">
+         <div class="filter-list">
+            <div class="filter__item filter__item_longer">
+               <select class="form__select">
+                  <option value="">Образование:</option>
+                  <option value="">Образование:</option>
+                  <option value="">Образование:</option>
+                  <option value="">Образование:</option>
+                  <option value="">Образование:</option>
+                  <option value="">Образование:</option>
+                  <option value="">Образование:</option>
+               </select>
+            </div>
+            <div class="filter__item">
+               <select class="form__select">
+                  <option value="">Знание языков:</option>
+                  <option value="">Знание языков:</option>
+                  <option value="">Знание языков:</option>
+                  <option value="">Знание языков:</option>
+                  <option value="">Знание языков:</option>
+               </select>
+            </div>
+            <div class="filter__item">
+               <select class="form__select">
+                  <option value="">График работы:</option>
+                  <option value="">График работы:</option>
+                  <option value="">График работы:</option>
+                  <option value="">График работы:</option>
+                  <option value="">График работы:</option>
+               </select>
+            </div>
+            <div class="filter__item">
+               <select class="form__select">
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+                  <option value="">Местонахождение:</option>
+               </select>
+            </div>
+            <div class="filter__item">
+               <select class="form__select">
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+                  <option value="">Специальность:</option>
+               </select>
+            </div>
+            <div class="filter-btns">
+               <a href="#" class="btn btn-type-line current">
+                  <i class="icon icon-line">
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60.123 60.123" style="enable-background:new 0 0 60.123 60.123;" xml:space="preserve">
+                        <path d="M57.124,51.893H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,51.893,57.124,51.893z"/>
+                        <path d="M57.124,33.062H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3 C60.124,31.719,58.781,33.062,57.124,33.062z"/>
+                        <path d="M57.124,14.231H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,14.231,57.124,14.231z"/>
+                        <circle cx="4.029" cy="11.463" r="4.029"/>
+                        <circle cx="4.029" cy="30.062" r="4.029"/>
+                        <circle cx="4.029" cy="48.661" r="4.029"/>
+                     </svg>                     
+                  </i>
+               </a>
+               <a href="#" class="btn btn-type-tiles">
+                  <i class="icon icon-tiles">
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="276.167px" height="276.167px" viewBox="0 0 276.167 276.167" style="enable-background:new 0 0 276.167 276.167;" xml:space="preserve">
+                        <path d="M33.144,2.471C15.336,2.471,0.85,16.958,0.85,34.765s14.48,32.293,32.294,32.293s32.294-14.486,32.294-32.293 S50.951,2.471,33.144,2.471z"/>
+                        <path d="M137.663,2.471c-17.807,0-32.294,14.487-32.294,32.294s14.487,32.293,32.294,32.293c17.808,0,32.297-14.486,32.297-32.293 S155.477,2.471,137.663,2.471z"/>
+                        <path d="M243.873,67.059c17.804,0,32.294-14.486,32.294-32.293S261.689,2.471,243.873,2.471s-32.294,14.487-32.294,32.294 S226.068,67.059,243.873,67.059z"/>
+                        <path d="M32.3,170.539c17.807,0,32.297-14.483,32.297-32.293c0-17.811-14.49-32.297-32.297-32.297S0,120.436,0,138.246 C0,156.056,14.493,170.539,32.3,170.539z"/>
+                        <path d="M136.819,170.539c17.804,0,32.294-14.483,32.294-32.293c0-17.811-14.478-32.297-32.294-32.297 c-17.813,0-32.294,14.486-32.294,32.297C104.525,156.056,119.012,170.539,136.819,170.539z"/>
+                        <path d="M243.038,170.539c17.811,0,32.294-14.483,32.294-32.293c0-17.811-14.483-32.297-32.294-32.297 s-32.306,14.486-32.306,32.297C210.732,156.056,225.222,170.539,243.038,170.539z"/>
+                        <path d="M33.039,209.108c-17.807,0-32.3,14.483-32.3,32.294c0,17.804,14.493,32.293,32.3,32.293s32.293-14.482,32.293-32.293 S50.846,209.108,33.039,209.108z"/>
+                        <path d="M137.564,209.108c-17.808,0-32.3,14.483-32.3,32.294c0,17.804,14.487,32.293,32.3,32.293 c17.804,0,32.293-14.482,32.293-32.293S155.368,209.108,137.564,209.108z"/>
+                        <path d="M243.771,209.108c-17.804,0-32.294,14.483-32.294,32.294c0,17.804,14.49,32.293,32.294,32.293 c17.811,0,32.294-14.482,32.294-32.293S261.575,209.108,243.771,209.108z"/>
+                     </svg>
+                  </i>
+               </a>
+            </div>
+         </div>
+         <div class="filter-left">
+            <div class="filter__item">
+               <select class="form__select">
+                  <option value="">Все объявления:</option>
+                  <option value="">Все объявления:</option>
+                  <option value="">Все объявления:</option>
+                  <option value="">Все объявления:</option>
+                  <option value="">Все объявления:</option>
+               </select>
+            </div>
+         </div>
+         <div class="filter-search">
+            <input type="submit" value="ИСКАТЬ" class="form__search">
+         </div>
+      </div>
+   </form>
+</div>
+
+<div class="block-three">
+   <div class="container">
+      <div class="block-three-item">
+         <a href="#" class="block-three-image">
+            <img src="img/image-block-two.jpg" alt="Фото">
+         </a>
+         <div class="block-three-content">
+            <a href="#" class="block-three__title">Грамотно и ответственно. Cоздание качественных на удобных системах</a>
+            <div class="block-three__text">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti <br>1 000 € Pie T/C Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, <br>erkers, logi vērsti  1 000 € Pie T/C </div>
+            <div class="block-three-bottom">
+               <div class="block-three__price">15 000 €</div>
+               <div class="block-three__small-text">13.01.21</div>
+            </div>
+         </div>
+         <div class="block-three-left">
+            <a href="#">
+               <i class="icon icon-arrow-white"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="block-banner">
+   <div class="container">
+      <div class="block-banner-list">
+         <a href="#" class="block-banner__link diamond"></a>
+         <a href="#" class="block-banner__link vip"></a>
+         <a href="#" class="block-banner__link diamond"></a>
+         <a href="#" class="block-banner__link"></a>
+      </div>
+   </div>
+</div>
+
+<div class="block-table show">
+   <div class="block-table-bg"></div>
+   <div class="container container_table">
+      <table>
+         <thead>
+            <tr>
+               <td colspan="3"><strong>Объявления</strong></td>
+               <td><strong>Дата</strong></td>
+               <td><strong>Образование</strong></td>
+               <td><strong>Знание языков</strong></td>
+               <td><strong>График работы</strong></td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr class="diamond">
+               <td>
+                  <label class="checkbox">
+                     <input type="checkbox" class="checkbox__hidden">
+                     <span class="checkbox__btn"></span>
+                  </label>
+               </td>
+               <td>
+                  <div class="block-table-image"><img src="img/bg-block-one.jpg"></div>
+               </td>
+               <td>
+                  <a href="#" class="block-table__title"><strong>Грамотно и ответственно. Cоздание качественных на удобных системах</strong></a>
+                  <div class="block-table-cat"><a href="#"><strong>Юрмала</strong></a><a href="#"><strong>Меллужи</strong></a></div>
+               </td>
+               <td><strong>13.01.21</strong></td>
+               <td><strong>Неоконченное высшее</strong></td>
+               <td><strong>RU | LV | EN</strong></td>
+               <td><strong>Рабочие дни</strong></td>
+            </tr>
+            <!--  -->
+            <tr class="diamond">
+               <td>
+                  <label class="checkbox">
+                     <input type="checkbox" class="checkbox__hidden">
+                     <span class="checkbox__btn"></span>
+                  </label>
+               </td>
+               <td>
+                  <div class="block-table-image"><img src="img/bg-block-one.jpg"></div>
+               </td>
+               <td>
+                  <a href="#" class="block-table__title">Грамотно и ответственно. Cоздание качественных на удобных системах</a>
+                  <div class="block-table-cat"><a href="#">Юрмала</a><a href="#">Меллужи</a></div>
+               </td>
+               <td>13.01.21</td>
+               <td>Неоконченное высшее</td>
+               <td>RU | LV | EN</td>
+               <td>Рабочие дни</td>
+            </tr>
+            <!--  -->
+            <tr class="vip">
+               <td>
+                  <label class="checkbox">
+                     <input type="checkbox" class="checkbox__hidden">
+                     <span class="checkbox__btn"></span>
+                  </label>
+               </td>
+               <td>
+                  <div class="block-table-image"><img src="img/bg-block-one.jpg"></div>
+               </td>
+               <td>
+                  <a href="#" class="block-table__title"><strong>Грамотно и ответственно. Cоздание качественных на удобных системах</strong></a>
+                  <div class="block-table-cat"><a href="#"><strong>Юрмала</strong></a><a href="#"><strong>Меллужи</strong></a></div>
+               </td>
+               <td><strong>13.01.21</strong></td>
+               <td><strong>Неоконченное высшее</strong></td>
+               <td><strong>RU | LV | EN</strong></td>
+               <td><strong>Рабочие дни</strong></td>
+            </tr>
+            <!--  -->
+            <tr class="vip">
+               <td>
+                  <label class="checkbox">
+                     <input type="checkbox" class="checkbox__hidden">
+                     <span class="checkbox__btn"></span>
+                  </label>
+               </td>
+               <td>
+                  <div class="block-table-image"><img src="img/bg-block-one.jpg"></div>
+               </td>
+               <td>
+                  <a href="#" class="block-table__title">Грамотно и ответственно. Cоздание качественных на удобных системах</a>
+                  <div class="block-table-cat"><a href="#">Юрмала</a><a href="#">Меллужи</a></div>
+               </td>
+               <td>13.01.21</td>
+               <td>Неоконченное высшее</td>
+               <td>RU | LV | EN</td>
+               <td>Рабочие дни</td>
+            </tr>
+            <!--  -->
+            <tr>
+               <td>
+                  <label class="checkbox">
+                     <input type="checkbox" class="checkbox__hidden">
+                     <span class="checkbox__btn"></span>
+                  </label>
+               </td>
+               <td>
+                  <div class="block-table-image"><img src="img/bg-block-one.jpg"></div>
+               </td>
+               <td>
+                  <a href="#" class="block-table__title"><strong>Грамотно и ответственно. Cоздание качественных на удобных системах</strong></a>
+                  <div class="block-table-cat"><a href="#"><strong>Юрмала</strong></a><a href="#"><strong>Меллужи</strong></a></div>
+               </td>
+               <td><strong>13.01.21</strong></td>
+               <td><strong>Неоконченное высшее</strong></td>
+               <td><strong>RU | LV | EN</strong></td>
+               <td><strong>Рабочие дни</strong></td>
+            </tr>
+            <!--  -->
+            <tr>
+               <td>
+                  <label class="checkbox">
+                     <input type="checkbox" class="checkbox__hidden">
+                     <span class="checkbox__btn"></span>
+                  </label>
+               </td>
+               <td>
+                  <div class="block-table-image"><img src="img/bg-block-one.jpg"></div>
+               </td>
+               <td>
+                  <a href="#" class="block-table__title">Грамотно и ответственно. Cоздание качественных на удобных системах</a>
+                  <div class="block-table-cat"><a href="#">Юрмала</a><a href="#">Меллужи</a></div>
+               </td>
+               <td>13.01.21</td>
+               <td>Неоконченное высшее</td>
+               <td>RU | LV | EN</td>
+               <td>Рабочие дни</td>
+            </tr>
+            <!--  -->
+         </tbody>
+      </table>
+   </div>
+   <div class="container">
+      <div class="block-table-bottom">
+         <div class="block-table-left">
+            <a href="#" class="show">Показать выбранные объявления (2)</a>
+            <a href="#" class="add">Добавить выбранные в закладки</a>
+            <a href="#" class="deselect">Снять выделение</a>
+         </div>
+         <ul class="pagination">
+            <!-- <li><a href="#">«</a></li> -->
+            <li><span class="active" href="#">1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><span>...</span></li>
+            <li><a href="#">16</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
+      </div>
+   </div>
+</div>
+
+<div class="block-tiles">
+   <div class="container">
+      <div class="block-tiles-list">
+         <div class="block-tiles-item diamond">
+            <a href="#" class="block-tiles-image">
+               <img src="img/bg-block-one.jpg" alt="image">
+            </a>
+            <div class="block-tiles-text">
+               <div class="block-tiles__title"><strong>Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </strong></div>
+               <a href="#" class="block-tiles__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-tiles-item diamond">
+            <a href="#" class="block-tiles-image">
+               <img src="img/bg-block-one.jpg" alt="image">
+            </a>
+            <div class="block-tiles-text">
+               <div class="block-tiles__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <a href="#" class="block-tiles__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-tiles-item vip">
+            <a href="#" class="block-tiles-image">
+               <img src="img/bg-block-one.jpg" alt="image">
+            </a>
+            <div class="block-tiles-text">
+               <div class="block-tiles__title"><strong>Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </strong></div>
+               <a href="#" class="block-tiles__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-tiles-item vip">
+            <a href="#" class="block-tiles-image">
+               <img src="img/bg-block-one.jpg" alt="image">
+            </a>
+            <div class="block-tiles-text">
+               <div class="block-tiles__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <a href="#" class="block-tiles__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-tiles-item">
+            <a href="#" class="block-tiles-image">
+               <img src="img/bg-block-one.jpg" alt="image">
+            </a>
+            <div class="block-tiles-text">
+               <div class="block-tiles__title"><strong>Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </strong></div>
+               <a href="#" class="block-tiles__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-tiles-item">
+            <a href="#" class="block-tiles-image">
+               <img src="img/bg-block-one.jpg" alt="image">
+            </a>
+            <div class="block-tiles-text">
+               <div class="block-tiles__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <a href="#" class="block-tiles__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+      </div>
+   </div>
+   <div class="container">
+      <div class="block-table-bottom">
+         <ul class="pagination">
+            <!-- <li><a href="#">«</a></li> -->
+            <li><span class="active" href="#">1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><span>...</span></li>
+            <li><a href="#">16</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
+      </div>
+   </div>
+</div>  
+       
+<div class="block-two">
+   <div class="container">
+      <h2 class="title">Рекомендации для вас</h2>
+      <div class="block-two-list">
+         <div class="block-two-item">
+            <a href="#" class="block-two-image">
+               <img src="img/image-block-two.jpg" alt="image">
+            </a>
+            <div class="block-two-text">
+               <div class="block-two__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <div class="block-two__price">15 000 €</div>
+               <a href="#" class="block-two__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-two-item">
+            <a href="#" class="block-two-image">
+               <img src="img/image-block-two.jpg" alt="image">
+            </a>
+            <div class="block-two-text">
+               <div class="block-two__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <div class="block-two__price">15 000 €</div>
+               <a href="#" class="block-two__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-two-item">
+            <a href="#" class="block-two-image">
+               <img src="img/image-block-two.jpg" alt="image">
+            </a>
+            <div class="block-two-text">
+               <div class="block-two__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <div class="block-two__price">15 000 €</div>
+               <a href="#" class="block-two__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-two-item">
+            <a href="#" class="block-two-image">
+               <img src="img/image-block-two.jpg" alt="image">
+            </a>
+            <div class="block-two-text">
+               <div class="block-two__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <a href="#" class="block-two__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-two-item">
+            <a href="#" class="block-two-image">
+               <img src="img/image-block-two.jpg" alt="image">
+            </a>
+            <div class="block-two-text">
+               <div class="block-two__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <div class="block-two__price">15 000 €</div>
+               <a href="#" class="block-two__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+         <div class="block-two-item">
+            <a href="#" class="block-two-image">
+               <img src="img/image-block-two.jpg" alt="image">
+            </a>
+            <div class="block-two-text">
+               <div class="block-two__title">Latvija, Rīga, Elizabetes iela. Fasādes māja, kāpņu telpa pēc kapitālā remonta, erkers, logi vērsti 1 000 € Pie T/C </div>
+               <div class="block-two__price">15 000 €</div>
+               <a href="#" class="block-two__link">
+                  <i class="icon icon-arrow-white"></i>
+               </a>
+            </div>
+         </div>
+         <!-- /.block-two-item -->
+      </div>
+   </div>
+</div>
+
+   <footer class="footer">
+      <div class="container footer-flex">
+         <div class="footer-left">
+            <div class="logo">
+               <a href="#" class="logo__link">
+                  <img src="img/logo.png" alt="">
+                  <span>doska.lv</span>
+               </a>
+            </div>
+            <div class="copy copy_separator">© 2021</div>
+         </div>
+         <div class="footer-right">
+            <nav class="menu">
+               <ul class="menu-list">
+                  <li class="menu__item"><a href="#">Правила</a></li>
+                  <li class="menu__item"><a href="#">Связь с редактором</a></li>
+                  <li class="menu__item"><a href="#">Реклама</a></li>
+                  <li class="menu__item"><a href="#">Сотрудничество</a></li>
+                  <li class="menu__item"><a href="#">Объявления</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </footer>
+
+   <!-- POPUPS -->
+   <div class="popup" id="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="#" class="popup__close close-popup">&times;</a>
+            <!-- popup content -->
+         </div>
+      </div>
+   </div>
+
+   <!--JS-->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="libs/choises-select/choices.min.js"></script>
+   <script src="js/script.min.js"></script>
+</body>
+</html>
