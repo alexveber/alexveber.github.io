@@ -1065,6 +1065,18 @@ body {
           box-shadow: 0 0 10px rgba(0, 0, 1, 0.23);
 }
 
+.choices .choices__placeholder {
+  opacity: 1;
+}
+
+.choices .is-selected {
+  background-color: #e0e0e0;
+}
+
+.choices .is-selected.is-highlighted {
+  background-color: #e0e0e0;
+}
+
 .choices.is-open {
   position: relative;
   z-index: 4;
