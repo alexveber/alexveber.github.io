@@ -1,0 +1,550 @@
+.container{
+   width: 100%;
+   max-width: 780px;
+   margin: 0 auto;
+}
+.four-banners{
+   padding: 11px 28px;
+   background: #ffc5d9 url(../img/bg-four-banners.png) center/cover no-repeat;
+   border: 2px solid #ffc5d9;
+   border-radius: 10px;
+}
+.four-banners_grid{
+   display: grid;
+   grid-template-columns: repeat(4, 150px);
+   grid-gap: 40px;
+   place-content: center;
+}
+.four-banners .icon{
+   position: relative;
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+.four-banners .banner-item{
+   /* width: 150px; */
+}
+.four-banners .banner-item.gold{}
+.four-banners .banner-item.diamond{}
+.four-banners .banner-image{
+   position: relative;
+   display: block;
+   width: 150px;
+   height: 140px;
+   border: 2px solid;
+   border-radius: 5px 0px 5px 5px;
+   line-height: 1;
+   overflow: hidden;
+}
+.four-banners .banner-item.gold .banner-image{
+   border-color: #dbbe66;
+}
+.four-banners .banner-item.diamond .banner-image{
+   border-color: #4aa5ff;
+}
+.four-banners .banner-image .icon-gold{
+   position: absolute;
+   top: -2px;
+   right: -2px;
+   display: block;
+   width: 27px;
+   height: 22px;
+   margin: 0;
+   padding: 0;
+   background: #dbbe66 url(../img/crown.png) no-repeat center !important;
+}
+.four-banners .banner-image .icon-diamond{
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: block;
+   width: 27px;
+   height: 22px;
+   margin: 0;
+   padding: 0;
+   background: #4aa5ff url(../img/diamond.png) no-repeat center !important;
+}
+.four-banners .banner-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   background-color: #bbbbbb;
+}
+.four-banners .banner-image-count{
+   position: absolute;
+   left: 3px;
+   bottom: 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 34px;
+   height: 15px;
+   padding: 1px 3px;
+   color: #000;
+   font: 700 13px/1.1em 'Open Sans', Arial, Meiryo, sans-serif;
+   background-color: #fff;
+   border-radius: 5px;
+}
+.four-banners .banner-image-count .icon-camera{
+   flex: 0 0 14px;
+   display: inline-block;
+   margin: 0 3px 0 0;
+   padding: 0;
+   width: 14px;
+   height: 12px;
+   background: url(../img/camera.png) center no-repeat;
+}
+.four-banners .banner-image-count span{
+   color: #000;
+   font: 700 13px/1.1em 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.four-banners .banner-name{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 8px 0 0;
+   color: #000;
+   font: 700 15px 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.four-banners .banner-name .icon-phone{
+   flex: 0 0 15px;
+   position: relative;
+   left: -5px;
+   display: block;
+   width: 15px;
+   height: 15px;
+   margin-right: -1px;
+   
+}
+.four-banners .banner-item.gold  .banner-name .icon-phone{
+   background: url(../img/phone-gold.png) center no-repeat;
+}
+.four-banners .banner-item.diamond  .banner-name .icon-phone{
+   background: url(../img/phone-diamond.png) center no-repeat;
+}
+.four-banners .banner-name span{
+   color: #000;
+   font: 700 15px 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.four-banners p{
+   margin: 0 0 0;
+   text-align: center;
+   color: #535353;
+   font: 400 13px 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.four-banners p a{
+   padding-left: 6px;
+   font: 400 13px 'Open Sans', Arial, Meiryo, sans-serif;
+   text-decoration: underline;
+}
+.four-banners .banner-item.gold p a{
+   color: #a48a39;
+}
+.four-banners .banner-item.diamond p a{
+   color: #2b7dcf;
+}
+.four-banners p a:hover{
+   text-decoration: none;
+}
+
+
+.big-banner{
+   border-radius: 10px;
+   border: 2px solid;
+   overflow: hidden;
+}
+.big-banner.diamond{
+   background: url(../img/bg-big-banner-diamond.png) center/cover no-repeat;
+   border-color: #4aa5ff;
+}
+.big-banner.gold{
+   background: url(../img/bg-big-banner-gold.png) center/cover no-repeat;
+   border-color: #dbbe66;
+}
+.big-banner .icon{
+   position: relative;
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+   width: auto;
+   height: auto;
+}
+.big-banner .banner-item{
+   position: relative;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+.big-banner .banner-item{
+   padding: 21px 20px;
+}
+.big-banner .banner-image{
+   flex: 0 0 166px;
+   width: 166px;
+   height: 166px;
+   margin-right: 16px;
+   border-radius: 10px;
+   border: 1px solid #ffffff;
+   overflow: hidden;
+}
+.big-banner .banner-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.big-banner .banner-text{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.big-banner .banner-title{
+   margin: -5px 0 0;
+   color: #000000;
+   font: 700 24px/1em 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.big-banner .banner-text p{
+   margin: 2px 0 18px;
+   color: #535353;
+   font: 13px 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.big-banner .banner-text p a{
+   font: 13px 'Open Sans', Arial, Meiryo, sans-serif;
+   text-decoration: underline;
+}
+.big-banner .banner-text p a:hover{
+   text-decoration: none;
+}
+.big-banner.diamond .banner-text p a{
+   color: #4aa5ff;
+}
+.big-banner.gold .banner-text p a{
+   color: #dbbe66;
+}
+.big-banner .banner-text-border{
+   max-width: 328px;
+   padding: 6px 9px;
+   color: #000;
+   font: 500 14px 'Open Sans', Arial, Meiryo, sans-serif;
+   border: 1px dashed;
+   border-radius: 5px;
+}
+.big-banner.diamond .banner-text-border{
+   border-color: #4aa5ff;
+}
+.big-banner.gold .banner-text-border{
+   border-color: #dbbe66;
+}
+.big-banner .banner-btns{
+   display: flex;
+   align-items: center;
+   margin: 27px 0 0;
+}
+.big-banner .banner-btns .btn{
+   margin-right: 9px;
+   transition: all 0.2s ease;
+}
+.big-banner .banner-btns .btn:hover{
+   text-decoration: none;
+   background-color: #dd3c5e;
+   color: #fff;
+}
+.big-banner .banner-btns .btn:hover .icon{
+   filter: brightness(500%);
+}
+.big-banner .banner-btns .btn-pink{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   height: 29px;
+   width: 131px;
+   color: #dd3c5e;
+   border: 1px solid #dd3c5e;
+   border-radius: 5px;
+}
+.big-banner .banner-btns .icon{
+   transition: all 0.2s ease;
+   margin-right: 6px;
+}
+.big-banner .banner-btns .icon-mail-pink{
+   width: 12px;
+   height: 9px;
+   background: url(../img/mail-pink.png) center no-repeat;
+}
+.big-banner .banner-btns .icon-call-pink{
+   width: 15px;
+   height: 15px;
+   background: url(../img/call-pink.png) center no-repeat;
+}
+.big-banner .banner-tag{
+   position: absolute;
+   top: -2px;
+   right: -2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px 9px 5px 6px;
+   color: #ffffff;
+   font: 13px 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.big-banner.diamond .banner-tag{
+   background-color: #4aa5ff;
+}
+.big-banner.gold .banner-tag{
+   background-color: #dbbe66;
+   padding: 6px 17px 5px 14px;
+}
+.big-banner .banner-tag span{
+   color: #ffffff;
+   font: 13px 'Open Sans', Arial, Meiryo, sans-serif;
+}
+.big-banner .banner-tag .icon-diamond{
+   flex: 0 0 19px;
+   width: 19px;
+   height: 16px;
+   margin-right: 6px;
+   background: url(../img/diamond.png) center no-repeat;
+   background-size: contain;
+}
+.big-banner .banner-tag .icon-gold{
+   flex: 0 0 20px;
+   width: 20px;
+   height: 15px;
+   margin-right: 6px;
+   background: url(../img/crown.png) center no-repeat;
+}
+
+.one-banner {}
+.one-banner .icon{
+   position: relative;
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+   width: auto;
+   height: auto;
+}
+.one-banner .banner-item{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 11px 5px;
+   border: 2px solid;
+}
+.one-banner.diamond .banner-item {
+   background: url(../img/bg-one-banner-diamond.png) center/cover no-repeat;
+   border-color: #4aa5ff;
+}
+.one-banner.gold .banner-item {
+   background: url(../img/bg-one-banner-gold.png) center/cover no-repeat;
+   border-color: #dbbe66;
+}
+.one-banner .banner-image{
+   display: block;
+   width: 118px;
+   height: 118px;
+   border: 1px solid #ffffff;
+   border-radius: 10px;
+   overflow: hidden;
+}
+.one-banner .banner-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.one-banner .banner-title{
+   margin: 9px 0 0;
+   color: #000000;
+   font: 700 16px/1.1em 'Open Sans', Arial, Meiryo, sans-serif;
+   text-align: center;
+}
+.one-banner p{
+   margin: 0;
+}
+.one-banner .banner-btns{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.one-banner .banner-btns .btn{
+   margin-top: 9px;
+   transition: all 0.2s ease;
+}
+.one-banner .banner-btns .btn:not(:first-child){
+   margin-top: 6px;
+}
+.one-banner .banner-btns .btn:hover{
+   text-decoration: none;
+   background-color: #dd3c5e;
+   color: #fff;
+}
+.one-banner .banner-btns .btn:hover .icon{
+   filter: brightness(500%);
+}
+.one-banner .banner-btns .btn-pink{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   height: 29px;
+   width: 131px;
+   color: #dd3c5e;
+   border: 1px solid #dd3c5e;
+   border-radius: 5px;
+}
+.one-banner .banner-btns .icon{
+   transition: all 0.2s ease;
+   margin-right: 6px;
+}
+.one-banner .banner-btns .icon-mail-pink{
+   width: 12px;
+   height: 9px;
+   background: url(../img/mail-pink.png) center no-repeat;
+}
+.one-banner .banner-btns .icon-call-pink{
+   width: 15px;
+   height: 15px;
+   background: url(../img/call-pink.png) center no-repeat;
+}
+.one-banner .banner-tag{
+   position: absolute;
+   top: -2px;
+   right: -2px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.one-banner .banner-tag .icon-gold{
+   display: block;
+   width: 27px;
+   height: 22px;
+   margin: 0;
+   padding: 0;
+   background: #dbbe66 url(../img/crown.png) no-repeat center !important;
+}
+.one-banner .banner-tag .icon-diamond{
+   display: block;
+   width: 27px;
+   height: 22px;
+   margin: 0;
+   padding: 0;
+   background: #4aa5ff url(../img/diamond.png) no-repeat center !important;
+}
+.slider-arrow{
+   opacity: 0;
+   position: absolute;
+   top: 87px;
+   transform: translateY(-50%);
+   height: 23px;
+   width: 23px;
+   cursor: pointer;
+   z-index: 2;
+}
+.slider-arrow-prev{
+   left: 0;
+   background: url(../img/slider-arrow-prev.png) center no-repeat;
+}
+.slider-arrow-next{
+   right: 0;
+   background: url(../img/slider-arrow-next.png) center no-repeat;
+}
+
+@media (max-width: 779px) {
+   .four-banners{
+      padding: 20px 10px 10px;
+   }
+   .four-banners, .big-banner{
+      border-width: 1px;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-radius: 0;
+   }
+   .four-banners .banner-item{
+      width: 144px;
+   }
+   .four-banners .banner-image{
+      width: 144px;
+      height: 134px;
+   }
+   .four-banners .banner-image{
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .slider-arrow{
+      opacity: 1;
+   }
+   .swiper-button-disabled{
+      opacity: 0.25;
+   }
+   .big-banner.diamond, .big-banner.gold{
+      background-position: center left;
+   }
+   .big-banner .banner-text-border {
+      max-width: 100%;
+   }
+   
+   .big-banner .banner-tag{
+      display: none;
+   }
+}
+@media (max-width: 576px) {
+   .big-banner .banner-item{
+      min-height: 218px;
+      padding: 10px;
+      position: relative;
+   }
+   .big-banner.gold .banner-item{
+      background: url(../img/big-banner-gold.png) no-repeat;
+      background-position: 14px 11px;
+   }
+   .big-banner.diamond .banner-item{
+      background: url(../img/big-banner-diamond.png) no-repeat;
+      background-position: 14px 8px;
+   }
+   .big-banner .banner-image{
+      flex: 0 0 127px;
+      width: 127px;
+      height: 143px;
+   }
+   .big-banner .banner-image{
+      position: absolute;
+      top: 56px;
+      margin: 0;
+   }
+   .big-banner .banner-text{
+      width: 100%;
+   }
+   .big-banner .banner-text-border{
+      padding: 4px 8px;
+   }
+   .big-banner .banner-title{
+      margin-top: -2px;
+      font-size: 17px;
+   }
+   .big-banner .banner-text p{
+      margin-bottom: 12px;
+   }
+   .big-banner .banner-title, .big-banner .banner-text p{
+      margin-left: 66px;
+   }
+   .big-banner .banner-text-border, .big-banner .banner-btns{
+      flex: 0 0 calc(100% - 137px);
+      width: calc(100% - 137px);
+      margin-left: auto;
+   }
+   .big-banner .banner-btns{
+      flex-wrap: wrap;
+      margin-top: 14px;
+   }
+   .big-banner .banner-btns .btn{
+      height: 27px;
+      width: 160px;
+      margin-bottom: 8px;
+   }
+
+}
+@media (max-width: 474px){
+   .big-banner .banner-btns .btn{
+      margin-right: 0;
+   }
+}
