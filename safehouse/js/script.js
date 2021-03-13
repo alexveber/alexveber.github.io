@@ -15,6 +15,19 @@ testWebP(function (support) {
   }
 });
 
+//Мобильное меню =======================================================================================
+const burger = document.querySelector('.menu-burger'),
+      menu = document.querySelector('.header .menu'),
+      menuItem = document.querySelectorAll('.header .menu a');
+function toggleMenu(){
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+}
+burger.addEventListener('click', toggleMenu);
+menuItem.forEach(elem => {
+  elem.addEventListener('click', toggleMenu);
+});
+
 //Плавная прокрутка по якорям  меню =====================================================================
 var headerHeight = $('header').outerHeight();
 $('.menu__item a').on('click', function(_event) {
