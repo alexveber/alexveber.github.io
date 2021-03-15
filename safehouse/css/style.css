@@ -967,10 +967,33 @@ a {
 /* about */
 
 .about {
+  position: relative;
   padding: 36px 0 52px;
 }
 
+.about_bg {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: url(../img/bg-about.jpg) no-repeat center/cover;
+}
+
+.about_bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
 .about .container {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2426,6 +2449,8 @@ body.lock {
 .webp .service__item_bg-four{ background: url(../img/services/service-tab-4.webp) center/cover no-repeat; }
 
 .webp .form-block-one_bg{ background: url(../img/bg-form-block-one.webp) center/cover no-repeat; }
+
+.webp .about_bg{ background: url(../img/bg-about.webp) no-repeat center/cover; }
 
 .webp .form-block-two_bg{ background: url(../img/bg-form-block-two.webp) center/cover no-repeat; }
 
